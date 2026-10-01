@@ -1,0 +1,251 @@
+:root {
+    --admin-navy: #061b41;
+    --admin-blue: #0b2e6b;
+    --admin-blue-light: #10458f;
+    --admin-ink: #1f2937;
+    --admin-border: #e5e7eb;
+    --admin-page: #f4f7fb;
+}
+
+body {
+    background: var(--admin-page) !important;
+    color: var(--admin-ink) !important;
+}
+
+.sidebar {
+    background: linear-gradient(180deg, var(--admin-navy) 0%, var(--admin-blue) 55%, var(--admin-blue-light) 100%) !important;
+    color: #fff !important;
+}
+
+.sidebar a,
+.sidebar .nav-link,
+.sidebar .nav {
+    color: #fff !important;
+}
+
+.sidebar a:hover,
+.sidebar .nav-link:hover,
+.sidebar a.active,
+.sidebar .nav-link.active {
+    background: rgba(255, 255, 255, .16) !important;
+    color: #fff !important;
+}
+
+.topbar {
+    background: #fff !important;
+    border-bottom-color: var(--admin-border) !important;
+}
+
+.topbar h1,
+.topbar-title h1,
+.section-title h2,
+.header h2 {
+    color: var(--admin-navy) !important;
+}
+
+.card,
+.summary-card,
+.child-card,
+.module,
+.results-box,
+.empty,
+.table-container,
+.selector,
+.panel {
+    border-color: var(--admin-border) !important;
+    box-shadow: 0 3px 12px rgba(6, 27, 65, .06) !important;
+}
+
+.btn-primary,
+button.primary,
+.action-btn.primary,
+.module-link,
+.section-title a {
+    background: var(--admin-blue) !important;
+    border-color: var(--admin-blue) !important;
+    color: #fff !important;
+}
+
+a {
+    color: var(--admin-blue);
+}
+
+.school-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.school-links a {
+    padding: 9px 12px;
+    border-radius: 7px;
+    background: var(--admin-blue);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.school-links a:hover {
+    background: var(--admin-navy);
+}
+
+/* Shared academic work surfaces */
+.student-main,
+.teacher-main {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at 90% 0%, rgba(16, 69, 143, .08), transparent 28rem),
+        var(--admin-page);
+}
+
+.student-main .panel,
+.teacher-main .panel {
+    overflow: hidden;
+}
+
+.student-main form,
+.teacher-main form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    align-items: end;
+    margin-top: 18px;
+}
+
+.student-main form > input[type="hidden"],
+.teacher-main form > input[type="hidden"] {
+    display: none;
+}
+
+.student-main form > textarea,
+.teacher-main form > textarea,
+.student-main form > button,
+.teacher-main form > button,
+.student-main form > hr,
+.teacher-main form > hr,
+.student-main form > .table-wrap,
+.teacher-main form > .table-wrap {
+    grid-column: 1 / -1;
+}
+
+.student-main label,
+.teacher-main label {
+    display: grid;
+    gap: 7px;
+    color: var(--admin-navy);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.student-main input:not([type="hidden"]),
+.student-main select,
+.student-main textarea,
+.teacher-main input:not([type="hidden"]),
+.teacher-main select,
+.teacher-main textarea {
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background: #fff;
+    color: var(--admin-ink);
+    font: inherit;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.student-main textarea,
+.teacher-main textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.student-main input:focus,
+.student-main select:focus,
+.student-main textarea:focus,
+.teacher-main input:focus,
+.teacher-main select:focus,
+.teacher-main textarea:focus {
+    border-color: var(--admin-blue);
+    box-shadow: 0 0 0 3px rgba(11, 46, 107, .12);
+}
+
+.student-main button,
+.teacher-main button {
+    min-height: 42px;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 7px;
+    background: var(--admin-blue);
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    transition: background .2s, transform .2s;
+}
+
+.student-main button:hover,
+.teacher-main button:hover {
+    background: var(--admin-navy);
+    transform: translateY(-1px);
+}
+
+.student-main hr,
+.teacher-main hr {
+    width: 100%;
+    margin: 24px 0 4px;
+    border: 0;
+    border-top: 1px solid var(--admin-border);
+}
+
+.student-main table,
+.teacher-main table {
+    overflow: hidden;
+    border: 1px solid var(--admin-border);
+    border-radius: 8px;
+    background: #fff;
+}
+
+.student-main tbody tr:hover,
+.teacher-main tbody tr:hover {
+    background: #f8fafc;
+}
+
+.student-main td input,
+.student-main td select,
+.teacher-main td input,
+.teacher-main td select {
+    min-height: 36px;
+    padding: 7px 9px;
+}
+
+.student-main small,
+.teacher-main small {
+    color: var(--admin-muted);
+    line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+    .student-main,
+    .teacher-main {
+        padding: 18px;
+    }
+
+    .student-main form,
+    .teacher-main form {
+        grid-template-columns: 1fr;
+    }
+
+    .student-main form > textarea,
+    .teacher-main form > textarea,
+    .student-main form > button,
+    .teacher-main form > button,
+    .student-main form > hr,
+    .teacher-main form > hr,
+    .student-main form > .table-wrap,
+    .teacher-main form > .table-wrap {
+        grid-column: auto;
+    }
+}

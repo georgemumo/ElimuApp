@@ -1,0 +1,1 @@
+<?php $moduleKey = 'submit_assignment'; require __DIR__ . '/_module.php';

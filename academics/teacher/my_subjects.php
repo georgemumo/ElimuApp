@@ -1,0 +1,1 @@
+<?php $moduleKey = 'my_subjects'; require __DIR__ . '/_module.php';

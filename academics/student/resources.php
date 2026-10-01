@@ -1,0 +1,1 @@
+<?php $moduleKey = 'resources'; require __DIR__ . '/_module.php';

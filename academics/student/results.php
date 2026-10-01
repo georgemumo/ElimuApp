@@ -1,0 +1,1 @@
+<?php $moduleKey = 'results'; require __DIR__ . '/_module.php';

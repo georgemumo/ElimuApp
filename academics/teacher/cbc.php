@@ -1,0 +1,1 @@
+<?php $moduleKey = 'cbc'; require __DIR__ . '/_module.php';

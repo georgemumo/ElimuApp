@@ -1,0 +1,1 @@
+<?php $moduleKey = 'manage_marks'; require __DIR__ . '/_module.php';

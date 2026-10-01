@@ -1,0 +1,1 @@
+<?php $moduleKey = 'timetable'; require __DIR__ . '/_module.php';

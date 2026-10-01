@@ -1,0 +1,1 @@
+<?php $moduleKey = 'class_performance'; require __DIR__ . '/_module.php';

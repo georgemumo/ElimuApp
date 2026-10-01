@@ -1,0 +1,1 @@
+<?php $moduleKey = 'reports'; require __DIR__ . '/_module.php';
